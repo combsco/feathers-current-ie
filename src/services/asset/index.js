@@ -7,11 +7,11 @@ const debug = makeDebug('feathers-currentie:asset')
 class Service {
   constructor (options = {}) {
     if (!options.token) {
-      throw new Error('CurrentIE - Predix `token` needs to be provided')
+      throw new Error('CurrentIE - GE Predix `token` needs to be provided')
     }
 
     if (!options.zoneId) {
-      throw new Error('CurrentIE - Predix `zoneId` needs to be provided')
+      throw new Error('CurrentIE - GE Predix `zoneId` needs to be provided')
     }
 
     this.currentie = new CurrentIE(options.token, options.zoneId)
@@ -34,7 +34,6 @@ class Service {
         return reject(new errors.BadRequest('`id` needs to be provided'))
       }
 
-      // return this.twilio.messages(id).get().then(resolve).catch(reject)
       return this.currentie.getAssetDetailByAssetId(id).then(resolve).catch(reject)
     })
   }

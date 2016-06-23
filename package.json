@@ -1,12 +1,14 @@
 {
   "name": "feathers-currentie",
-  "description": "Current IE Service",
-  "version": "0.0.0",
+  "description": "A Feathers service for GE Current Intelligent Environments",
+  "version": "0.1.0",
   "homepage": "https://github.com/combsco/feathers-current-ie",
   "main": "lib/",
   "keywords": [
     "feathers",
-    "feathers-plugin"
+    "feathers-plugin",
+    "predix",
+    "ge current"
   ],
   "license": "MIT",
   "repository": {
@@ -14,9 +16,9 @@
     "url": "git://github.com/combsco/feathers-current-ie.git"
   },
   "author": {
-    "name": "Feathers contributors",
-    "email": "hello@feathersjs.com",
-    "url": "https://feathersjs.com"
+    "name": "Christopher Combs",
+    "email": "hey@chriscombs.me",
+    "url": "https://chriscombs.me"
   },
   "contributors": [],
   "bugs": {
@@ -34,7 +36,7 @@
     "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
     "compile": "rimraf lib/ && babel -d lib/ src/",
     "watch": "babel --watch -d lib/ src/",
-    "jshint": "eslint src/.",
+    "eslint": "eslint src/.",
     "start": "npm run compile && node example/app"
   },
   "directories": {
