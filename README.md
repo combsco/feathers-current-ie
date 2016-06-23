@@ -1,15 +1,16 @@
 # feathers-currentie
 
 > A Feathers service for GE Current Intelligent Environments
+
 **This is a work in progress**
 
 ## Installation
 
 ```
-npm install feathers-currentie --save
+npm install github:feathers-currentie github:combsco/current-ie --save
 ```
 
-## Complete Example
+## Example
 
 Here's an example of a Feathers server that uses `feathers-currentie`.
 
